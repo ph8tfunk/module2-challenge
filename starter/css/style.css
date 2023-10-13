@@ -102,6 +102,20 @@ p {
   justify-content: space-around;
 }
 
+.hero-banner{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+.hero-banner h2{
+  color: aliceblue;
+}
 
 
 
