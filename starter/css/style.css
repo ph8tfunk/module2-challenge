@@ -195,3 +195,29 @@ p {
   width: 25%;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 1000px){
+
+  #navigation{
+    display: none;
+  }
+
+  #contactMe, #contactDetails{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  
+
+  #projects{
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "featuredWork"
+    "project2"
+    "project3"
+    "project4"
+    "project5";
+  }
+}
