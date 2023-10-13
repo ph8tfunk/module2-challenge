@@ -18,20 +18,12 @@ h6 {
   margin: 0;
 }
 
-h3 {
-  padding: 20px;
-}
 p {
   margin: 0;
 }
 
 #page-wrapper{
   display: grid;
-  /* margin: 0px 5%;
-  min-height: 500px;
-  height: 70vh; */
-  /* justify-content: center;
-  align-items: center; */
   grid-template-columns: 20% 80%;
   grid-template-rows: 20% 1fr 20%;
   grid-template-areas: 
@@ -93,7 +85,7 @@ p {
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: center;
+  align-content: end;
 }
 
 #featuredWork{
@@ -135,7 +127,7 @@ p {
 #navBar h1 {
   font-weight: 800;
   font-size: xx-large;
-  color: white;
+  color: slategray;
   margin-left: 10px;
 }
 
@@ -147,6 +139,11 @@ p {
   justify-content: space-around;
 }
 
+#navigation a{
+  text-decoration: none;
+  color: slategray
+}
+
 .hero-banner{
   display: flex;
   flex-direction: row;
@@ -156,6 +153,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
+  margin-bottom: 10px;
 }
 .hero-banner img{
  height: 95%;
@@ -164,5 +162,12 @@ p {
   color: aliceblue;
 }
 
-
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 5px;
+  height: 80px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid slategray;
+}
 
