@@ -171,3 +171,27 @@ p {
   border-bottom: 5px solid slategray;
 }
 
+#contactDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 800;
+  font-size: large;
+  color: slategray;
+  margin-left: 10px;
+}
+
+#contactDetails a {
+  text-decoration: none;
+  color: black;
+  padding: 40px;
+}
+
+#navigation{
+
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+}
