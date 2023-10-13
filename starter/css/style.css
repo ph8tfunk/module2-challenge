@@ -22,18 +22,20 @@ p {
   margin: 0;
 }
 
-.page-wrapper{
+#page-wrapper{
   display: grid;
-  /* margin: 0px 5%;
-  min-height: 500px;
-  height: 70vh; */
-  /* justify-content: center;
-  align-items: center; */
   grid-template-columns: 20% 80%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 20% 1fr 20%;
   grid-template-areas: 
   "about aboutDetails"
-  "work projects";
+  "work project"
+  "contactMe ContactDetails";
+}
+
+.page-section{
+  margin: 5px;
+  display: grid;
+  align-content: start;
 }
 
 #about{
@@ -48,35 +50,70 @@ p {
   grid-area: work;
 } 
 
+#contactMe{
+  grid-area: contactMe;
+} 
+
+#ContactDetails{
+  grid-area: ContactDetails;
+} 
+
+#project{
+  grid-area: project;
+}
+
+#about, #work, #contactMe{
+  border-right: 5px solid slategray;
+}
+
 #projects{
-  grid-area: projects;
   display:grid;
+
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 200px;
   grid-template-areas: 
+    "featuredWork featuredWork"
     "featuredWork featuredWork"
     "project2 project3"
     "project4 project5";
 }
 
-.featuredWork{
+.projectArea{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#featuredWork{
   grid-area: featuredWork;
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 
-.project2{
+#project2{
   grid-area: project2;
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
-.project3{
+#project3{
   grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+
 }
 
-.project4{
+#project4{
   grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+
 }
 
-.project5{
+#project5{
   grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+
 }
 
 #navBar {
@@ -90,7 +127,7 @@ p {
 #navBar h1 {
   font-weight: 800;
   font-size: xx-large;
-  color: white;
+  color: slategray;
   margin-left: 10px;
 }
 
@@ -102,20 +139,85 @@ p {
   justify-content: space-around;
 }
 
+#navigation a{
+  text-decoration: none;
+  color: slategray
+}
+
 .hero-banner{
   display: flex;
   flex-direction: row;
   align-items: end;
-  justify-content: end;
+  justify-content: space-between;
   background-image: url("../images/02-hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
+  margin-bottom: 10px;
 }
-
+.hero-banner img{
+ height: 95%;
+}
 .hero-banner h2{
   color: aliceblue;
 }
 
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 5px;
+  height: 80px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid slategray;
+}
 
+#contactDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 800;
+  font-size: large;
+  color: slategray;
+  margin-left: 10px;
+}
 
+#contactDetails a {
+  text-decoration: none;
+  color: black;
+  padding: 40px;
+}
+
+#navigation{
+
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px){
+
+  #navigation{
+    display: none;
+  }
+
+  #contactMe, #contactDetails{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  
+
+  #projects{
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "featuredWork"
+    "project2"
+    "project3"
+    "project4"
+    "project5";
+  }
+}
