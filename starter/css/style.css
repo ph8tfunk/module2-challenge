@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  padding: 10px;
+  margin: 0px 5%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -78,4 +78,30 @@ p {
 .project5{
   grid-area: project5;
 }
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  background-color: black;
+}
+
+#navBar h1 {
+  font-weight: 800;
+  font-size: xx-large;
+  color: white;
+  margin-left: 10px;
+}
+
+#navigation{
+
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+}
+
+
+
 
