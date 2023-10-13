@@ -21,3 +21,61 @@ h6 {
 p {
   margin: 0;
 }
+
+.page-wrapper{
+  display: grid;
+  /* margin: 0px 5%;
+  min-height: 500px;
+  height: 70vh; */
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "about aboutDetails"
+  "work projects";
+}
+
+#about{
+  grid-area: about;
+} 
+
+#aboutDetails{
+  grid-area: aboutDetails;
+} 
+
+#work{
+  grid-area: work;
+} 
+
+#projects{
+  grid-area: projects;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "featuredWork featuredWork"
+    "project2 project3"
+    "project4 project5";
+}
+
+.featuredWork{
+  grid-area: featuredWork;
+}
+
+.project2{
+  grid-area: project2;
+}
+
+.project3{
+  grid-area: project3;
+}
+
+.project4{
+  grid-area: project4;
+}
+
+.project5{
+  grid-area: project5;
+}
+
