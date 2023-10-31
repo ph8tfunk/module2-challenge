@@ -7,6 +7,7 @@ This is the portfolio project to showcase differnt projects and hobbies.
 ## Screenshot
 
 
+<a href="https://ph8tfunk.github.io/module2-challenge/">Portfolio Project</a>
 
 ## Installation
 N/A
